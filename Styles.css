@@ -18,7 +18,6 @@ body {
 a {
     text-decoration: none;
     color: white;
-    width: max-content;
 }
 
 a:hover {
@@ -27,39 +26,15 @@ a:hover {
 
 header {
     background-color: #005ea5;
-    padding: 0 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
 }
 
 .homePhoto {
     width: 250px;
-}
-
-.home{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-
-.home a{
-    background-color: #005ea5;
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 0.5rem;
-    width: 100%;
-
-}
-
-.home a:hover {
-    background-color: #003087;
+    
 }
 
 header nav ul {
@@ -117,7 +92,7 @@ form {
   }
   
   input[type="date"],
-  input[type="text"], select {
+  input[type="text"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
