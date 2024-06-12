@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Cliente</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/js/submitClientForm.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="/img/logoSemFundo.png" alt="Descrição da imagem" class="homePhoto">
+     
+        <nav>
+            <ul>
+                <li><a href="reservarQuartos.html">Reservar Quantos</a></li>
+                <li><a href="CadCliente.html">Cadastrar Cliente</a></li>
+                <li><a href="clientes.html">Ver Clientes</a></li>
+                <li><a href="reservas.html">Ver Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="registerClient">
+            <label for="clientName">Nome do Cliente:</label><br>
+            <input type="text" id="clientName" name="clientName" required><br><br>
+          
+            <label for="clientCPF">CPF do Cliente:</label><br>
+            <input type="text" id="clientCPF" name="clientCPF" required><br><br>
+          
+            <label for="clientBDay">Data de Nascimento do Cliente:</label><br>
+            <input type="date" id="clientBDay" name="clientBDay" required><br><br>
+          
+            <button type="submit">Enviar Reserva</button>
+          </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hotelaria. Todos os direitos reservados.</p>
+    </footer>
+    
+</body>
+</html>

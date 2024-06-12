@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotelaria</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="getRooms.js"></script>
+</head>
+<body>
+    <script>
+        // Redirecionar para outra página HTML usando URLs relativos
+        function redirectToRelativePage(relativePageUrl) {
+            const absoluteUrl = window.location.href.split('#')[0]; // Obtém o URL atual sem o fragmento
+            const redirectToUrl = absoluteUrl.substring(0, absoluteUrl.lastIndexOf("/") + 1) + relativePageUrl; // Concatena o URL da pasta atual com o URL relativo da página
+            window.location.href = redirectToUrl; // Redireciona para o novo URL
+        }
+
+        // Exemplo de uso:
+        redirectToRelativePage('html/CadCliente.html'); // Substitua 'outraPasta/suaPagina.html' pelo caminho relativo da página para onde deseja redirecionar
+
+
+    </script>
+</body>
+</html>
